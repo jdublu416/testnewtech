@@ -1,0 +1,64 @@
+body{
+    width:100%;
+    margin:auto;
+    background-color: #65666b;
+}
+
+#content{
+    display:grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(6,1fr);
+    grid-auto-rows: minmax(50px,auto);
+    grid-gap: 5px;
+    grid-template-areas:
+    "nav nav nav nav nav nav"
+    "header header header header header header"
+    "header header header header header header"
+    "aside aside main main main main"
+    "aside aside main main main main"
+    "aside aside main main main main"
+    "footer footer footer footer footer footer"
+}
+
+nav h1{
+    display: inline-block;
+}
+
+header{
+    grid-area: header;
+    
+}
+nav{grid-area:nav;
+   
+}
+aside{grid-area: aside;}
+main{grid-area: main;}
+footer{grid-area: footer;}
+section{grid-area: section}
+
+#hero{
+    background-image: url("../images/redbarn.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:450px;
+    text-align: center;
+
+
+}
+.listStuff{
+   position: relative;
+    background-color: #6d6c67;
+    width:100px;
+    float: right;
+}
+
+.listItem{
+    list-style: none;
+    text-align: center;
+    display: block;
+    font-size: 2em;
+    
+}
+.listItem a{
+    color:white;
+}
