@@ -1,72 +1,84 @@
 /* teaching tool... */
-body{
-    width:100%;
-    margin:auto;
-    background-color: #65666b;
-    
+body {
+  width: 100%;
+  margin: auto;
+  background-color: #65666b;
+  color: white;
 }
 
-#content{
-    display:grid;
-    margin: 0 auto;
-    grid-template-columns: repeat(6,1fr);
-    grid-auto-rows: minmax(50px,auto);
-    grid-gap: 5px;
-    grid-template-areas:
+#content {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: minmax(50px, auto);
+  grid-gap: 5px;
+  grid-template-areas:
     "nav nav nav nav nav nav"
     "header header header header header header"
     "header header header header header header"
     "aside aside main main main main"
     "aside aside main main main main"
     "aside aside main main main main"
-    "footer footer footer footer footer footer"
+    "section section section section section section"
+    "footer footer footer footer footer footer";
 }
 
-/* nav h1{
-    display: inline-block;
-} */
-
-header{grid-area: header;}
-nav{grid-area:nav;}
-aside{grid-area: aside;}
-main{grid-area: main;}
-footer{grid-area: footer;}
-section{grid-area: section}
-
-#headingTitle{
-    font-family: 'Modern Antiqua', cursive;
-    color: white;
-    margin-left:400px;
-    margin-top:50px;
+/* grid areas  */
+header {
+  grid-area: header;
+}
+nav {
+  grid-area: nav;
 }
 
-#hero{
-    background-image: url("../images/codeisPoetry.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height:450px;
-    text-align: center;
-
-
+aside {
+  grid-area: aside;
+  padding: 15px 25px;
 }
-.listStuff{
-    background-color: #6d6c67;
-    width:100px;
-    
+main {
+  grid-area: main;
+  font-size: 1em;
+  padding: 15px 25px;
+}
+footer {
+  grid-area: footer;
+}
+section {
+  grid-area: section;
+  padding: 15px 25px
 }
 
-.listItem{
-    list-style: none;
-    text-align: center;
-    display: block;
-    font-size: .9em;
-    float:right;
-    padding-top:50px;
-    
+#headingTitle {
+  font-family: "Modern Antiqua", cursive;
+  color: white;
+  margin-left: 450px;
+  margin-top: 50px;
+  font-size: 3.5em;
 }
-.listItem a{
-    color:white;
-    display:inline-block;
-    padding:5px;
-    margin-right:5px;
+
+#hero {
+  background-image: url("../images/codeisPoetry.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  text-align: center;
+}
+.listStuff {
+  background-color: #6d6c67;
+  width: 100px;
+}
+
+.listItem {
+  list-style: none;
+  text-align: center;
+  display: block;
+  font-size: 0.9em;
+  float: right;
+  padding-top: 50px;
+}
+.listItem a {
+  color: white;
+  display: inline-block;
+  padding: 5px;
+  margin-right: 5px;
 }
