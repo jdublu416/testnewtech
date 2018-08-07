@@ -1,7 +1,9 @@
+/* teaching tool... */
 body{
     width:100%;
     margin:auto;
     background-color: #65666b;
+    
 }
 
 #content{
@@ -20,24 +22,26 @@ body{
     "footer footer footer footer footer footer"
 }
 
-nav h1{
+/* nav h1{
     display: inline-block;
-}
+} */
 
-header{
-    grid-area: header;
-    
-}
-nav{grid-area:nav;
-   
-}
+header{grid-area: header;}
+nav{grid-area:nav;}
 aside{grid-area: aside;}
 main{grid-area: main;}
 footer{grid-area: footer;}
 section{grid-area: section}
 
+#headingTitle{
+    font-family: 'Modern Antiqua', cursive;
+    color: white;
+    margin-left:400px;
+    margin-top:50px;
+}
+
 #hero{
-    background-image: url("../images/redbarn.jpg");
+    background-image: url("../images/codeisPoetry.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height:450px;
@@ -46,19 +50,23 @@ section{grid-area: section}
 
 }
 .listStuff{
-   position: relative;
     background-color: #6d6c67;
     width:100px;
-    float: right;
+    
 }
 
 .listItem{
     list-style: none;
     text-align: center;
     display: block;
-    font-size: 2em;
+    font-size: .9em;
+    float:right;
+    padding-top:50px;
     
 }
 .listItem a{
     color:white;
+    display:inline-block;
+    padding:5px;
+    margin-right:5px;
 }
